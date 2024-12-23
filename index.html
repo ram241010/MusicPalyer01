@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="player">
+            <h1>🎶 Cool Music Player 🎶</h1>
+            <div class="cd-container">
+                <div class="cd"></div>
+            </div>
+            <audio id="audioPlayer" controls>
+                <source src="music/song1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="controls">
+                <button onclick="playPause()">▶️ Play/Pause</button>
+                <button onclick="nextTrack()">Next Track</button>
+                <button onclick="previousTrack()">Previous Track</button>
+            </div>
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul>
+                    <li onclick="changeTrack('music/song1.mp3')">Song 1</li>
+                    <li onclick="changeTrack('music/song2.mp3')">Song 2</li>
+                    <li onclick="changeTrack('music/song3.mp3')">Song 3</li>
+                </ul>
+            </div>
+            <footer>
+                <p>Designed by RAM24 (MAVERICK)</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
